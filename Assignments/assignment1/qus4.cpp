@@ -3,18 +3,24 @@
 int lcm(int,int);
 int main()
 {
-    int a,b,max;
+    int a,b,find;
     printf("Enter two number : ");
     scanf("%d %d",&a,&b);
-    max=a>b?a:b;
+        printf("lcm is : %d",lcm(a,b));
+    return 0;
+}
+int lcm(int x,int y)
+{
+    int max;
+    max=x>y?x:y;
     while(1)
     {
-        if(max%a==0&&max%b==0)
-        {
-            printf("Lcm is %d",max);      
+        if(max%x==0&&max%y==0)
+        {  
+            return max;    
             break;
         }
         max++;
     }
-    return 0;
+    return max;
 }
