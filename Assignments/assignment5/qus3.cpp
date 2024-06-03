@@ -13,7 +13,7 @@ int area(int l,int b)
 float area(float l,float b,float h)
 {
     float s=(l+b+h)*0.5;
-    return sqrt(s*(s-l)*(s-b)*(s-h));
+    return (sqrt(s*(s-l)*(s-b)*(s-h)));
 }
 int main()
 {
