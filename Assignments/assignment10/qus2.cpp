@@ -20,7 +20,7 @@ class Customer
         {
 
         }
-        Customer(int x,char ex[15],char ex2[15],long int y)
+        Customer(int x,char ex[],char ex2[],long int y)
         {
             cust_id=x;
             strcpy(name,ex);
